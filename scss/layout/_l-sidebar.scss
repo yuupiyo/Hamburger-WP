@@ -1,0 +1,11 @@
+@use "../foundation/mixin" as m;
+@use "../foundation/variable" as v;
+
+.l-sidebar {
+  background-color: v.$bgcolor-grey;
+  padding-top: 21.2rem;
+  padding-left: 4.6rem;
+  @include m.pc {
+    padding-top: 5.1rem;
+  }
+}

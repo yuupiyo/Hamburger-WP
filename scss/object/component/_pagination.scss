@@ -1,0 +1,116 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
+
+.c-pagination {
+  width: 100%;
+  padding-top: 5.84rem;
+  padding-bottom: 3.1rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include m.tablet {
+    justify-content: center;
+    padding-top: 10.35rem;
+    padding-bottom: 3rem;
+  }
+  @include m.pc {
+    padding-top: 9.1rem;
+    padding-bottom: 4rem;
+  }
+
+  &__count {
+    display: none;
+    @include m.tablet {
+      display: block;
+      font-size: 1.6rem;
+      margin-top: 0.2rem;
+      margin-right: 1.93rem;
+    }
+    @include m.pc {
+      font-size: 1.2rem;
+      margin-right: 1.2rem;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include m.tablet {
+      width: auto;
+      justify-content: center;
+    }
+  }
+
+  &__prev {
+    width: 1.7rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    margin-right: 1.72rem;
+    position: relative;
+    @include m.pc {
+      width: 1.1rem;
+      height: 1.1rem;
+      line-height: 1.1rem;
+      margin-right: 1.1rem;
+    }
+    &::after {
+      content: "前へ";
+      width: 3.2rem;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 2.5rem;
+      @include m.tablet {
+        display: none;
+      }
+    }
+  }
+
+  &__next {
+    width: 1.7rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    margin-left: 1.72rem;
+    position: relative;
+    @include m.pc {
+      width: 1.1rem;
+      height: 1.1rem;
+      line-height: 1.1rem;
+      margin-left: 1.1rem;
+    }
+    &::before {
+        content: "後へ";
+        width: 3.2rem;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 2.5rem;
+        @include m.tablet {
+          display: none;
+      }
+    }
+  }
+
+  &__number {
+    display: none;
+    @include m.tablet {
+      display: block;
+      width: 3.5rem;
+      height: 3.5rem;
+      text-align: center;
+      font-size: 1.6rem;
+      line-height: 3.5rem;
+      margin: 0.5rem;
+    }
+    @include m.pc {
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 1.2rem;
+      line-height: 2.5rem;
+      margin: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
+
+.c-nav {
+  &__list {
+    margin-bottom: 4.3rem;
+    @include m.pc {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+    @include m.pc {
+      font-size: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__list-item {
+    font-size: 2rem;
+    line-height: 1.45;
+    margin-bottom: 2.3rem;
+    margin-left: 2rem;
+    @include m.pc {
+      font-size: 1.3rem;
+      margin-bottom: 1.4rem;
+      margin-left: 1.3rem;
+    }
+  }
+}

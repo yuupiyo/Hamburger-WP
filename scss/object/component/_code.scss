@@ -1,0 +1,11 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
+
+.c-code {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 1.43;
+  @include m.pc {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,19 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
+
+.c-list-item {
+  font-size: 1.6rem;
+  @include m.pc {
+    font-size: 1.2rem;
+  }
+  &__first,
+  &__second {
+    margin-bottom: 2rem;
+    @include m.pc {
+      margin-bottom: 1.25rem;
+    }
+  }
+  &__second {
+    margin-left: 1.8rem;
+  }
+}

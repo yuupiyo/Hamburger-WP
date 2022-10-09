@@ -1,0 +1,26 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
+
+.c-inner {
+  // archive,archive-searchページ
+  width: 100%;
+  padding: 3rem 2rem 0;
+  @include m.tablet {
+    padding: 3.6rem 3.5rem 0 4.3rem;
+  }
+  @include m.pc {
+    padding: 3.8rem 6.3rem 0;
+  }
+
+  // single,pageページ
+  &--single {
+    width: 100%;
+    padding: 3rem 2rem 17.7rem;
+    @include m.tablet {
+      padding: 6rem 6rem 22.8rem;
+    }
+    @include m.pc {
+      padding: 3.8rem 7rem 22.1rem;
+    }
+  }
+}

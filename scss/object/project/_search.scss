@@ -1,0 +1,72 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
+
+.p-search {
+  display: inline-block;
+  position: relative;
+  
+  // 虫眼鏡の部分
+  &::before {
+    content: '';
+    width: 2.4rem;
+    height: 2.4rem;
+    background: url(../../../images/search-icon.png) no-repeat center center/ auto 100%;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1.2rem;
+    color: #808080;
+    @include m.pc {
+      width: 1.5rem;
+      height: 1.5rem;
+      left: 0.5rem;
+    }
+  }
+
+  // 検索窓部分
+  &__input {
+    width: 23rem;
+    height: 4.6rem;
+    background-color: v.$color-white;
+    padding-left: 4rem;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      opacity: 0;
+      @include m.tablet {
+        opacity: 1;
+      }
+    }
+    @include m.tablet {
+      width: 39.6rem;
+      font-size: 1.6rem;
+    }
+    @include m.pc {
+      width: 24.8rem; 
+      height: 2.9rem; 
+      padding-left: 2.5rem;
+      font-size: 1rem;      
+    }
+  }
+
+  // 検索ボタン部分
+  &__button {
+    width: 7.8rem;
+    height: 4.6rem;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin-left: 1.2rem;
+    @include m.tablet {
+      width: 13.6rem;
+      margin-left: 1.4rem;
+    }
+    @include m.pc {
+      width: 8.5rem;
+      height: 2.9rem;
+      font-size: 0.1rem;
+      margin-left: 0.8rem;
+    }
+  }
+}

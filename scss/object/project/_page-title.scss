@@ -1,0 +1,109 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
+
+.p-page-title {
+  // archiveページ,archive-searchページ
+  &__archive {
+    width: 100%;
+    height: 28.3rem;
+    position: relative;
+    @include m.pc {
+      height: 15rem;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 10.2rem;
+    left: 3.7rem;
+    @include m.tablet {
+      flex-direction: row;
+      gap: 2rem;
+      left: 8.6rem;
+    }
+    @include m.pc {
+      gap: 1.3rem;
+      top: 5rem;
+      left: 5.4rem;
+    }
+  }
+  &__main {
+    font-size: 3.6rem;
+    @include m.tablet {
+      font-size: 6rem;
+    }
+    @include m.pc {
+      font-size: 4rem;
+    }
+  }
+  &__sub {
+    font-size: 1.6rem;
+    @include m.pc {
+      font-size: 1.2rem;
+    }
+  }
+
+  // singleページ
+  &__single {
+    width: 100%;
+    height: 22.5rem;
+    position: relative;
+    @include m.tablet {
+      height: 50rem;
+    }
+    @include m.pc {
+      height: 33rem;
+    }
+
+    // singleページのmain-title部分
+    &--main {
+      font-size: 3.6rem;
+      position: absolute;
+      top: 9.1rem;
+      left: 2.6rem;
+      @include m.tablet {
+        font-size: 6rem;
+        top: 20.9rem;
+        left: 8.6rem;
+      }
+      @include m.pc {
+        font-size: 3.75rem;
+        top: 15rem;
+        left: 5.5rem;
+      }
+    }
+  }
+
+  // pageページ
+  &__page {
+    width: 100%;
+    height: 22.5rem;
+    position: relative;
+    @include m.tablet {
+      height: 50rem;
+    }
+    @include m.pc {
+      height: 33rem;
+    }
+
+    // pageページのmain-title部分
+    &--main {
+      font-size: 3.6rem;
+      position: absolute;
+      top: 9.1rem;
+      left: 4.5rem;
+      @include m.tablet {
+        font-size: 6rem;
+        top: 20.9rem;
+        left: 8.6rem;
+      }
+      @include m.pc {
+        font-size: 3.75rem;
+        top: 15rem;
+        left: 5.5rem;
+      }
+    }
+  }
+}

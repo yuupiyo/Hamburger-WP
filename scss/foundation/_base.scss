@@ -1,0 +1,33 @@
+// ================================
+// base
+// ================================
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 350px;
+  width: 100%;
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #333333;
+  &.fixed {
+    overflow: hidden;
+  }
+}
+
+img,
+video,
+object {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}

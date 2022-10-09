@@ -1,0 +1,59 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
+
+// 背景画像
+.c-background {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  // front-pageのmainvisual
+  &__main {
+    @extend .c-background;
+    background-image: url(../../../images/bg-front-main-sp.jpg);
+    @include m.tablet {
+      background-image: url(../../../images/bg-front-main.jpg);
+    }
+  }
+
+  // archive,archive-searchページのタイトル部分
+  &__archive {
+    background: url(../../../images/bg-archive-main-sp.png) no-repeat left center / cover;
+    @include m.tablet {
+      background: url(../../../images/bg-archive-main.png) no-repeat center center / cover;
+    }
+  }
+
+  // singleページのタイトル部分
+  &__single {
+    @extend .c-background;
+    background-image: url(../../../images/bg-single-main.jpg);
+  }
+
+  // pageページのタイトル部分
+  &__page {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-image: url(../../../images/bg-page-main.jpg);
+  }
+}
+
+.c-background-color {
+  // archive,archive-searchのmainvusualの黒い透過部分
+  &__black {
+    background-color: rgb(0, 0, 0);
+  }
+  &__brown {
+    background-color: v.$color-brown;
+  }
+  &__white {
+    background-color: v.$color-white;
+  }
+  &__gray {
+    background-color: #f5f5f5;
+  }
+  &__article {
+    background-color: v.$bgcolor-article;
+  }
+}

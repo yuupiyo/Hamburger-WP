@@ -1,0 +1,14 @@
+@use "../foundation/mixin" as m;
+@use "../foundation/variable" as v;
+
+.l-footer {
+  background-image: url(../../../images/bg-footer.png);
+  text-align: center;
+  padding: 4rem 0 3.1rem;
+  @include m.tablet {
+    padding: 4rem 0 2.9rem;
+  }
+  @include m.pc {
+    padding: 2.5rem 0 1.8rem;
+  }
+}

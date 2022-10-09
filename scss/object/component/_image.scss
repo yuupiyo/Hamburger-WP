@@ -1,0 +1,62 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
+
+.c-image {
+  // single.pageページの1番大きなハンバーガー画像
+  &__big {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    margin: 3rem 0;
+    @include m.tablet {
+      margin: 6rem 0;
+    }
+    @include m.pc {
+      margin: 4.2rem 0;
+    }
+  }
+
+  // single,pageページ部分のテキスト付きのハンバーガー画像
+  &__description {
+    width: 43%;
+    object-fit: cover;
+    height: 8.9rem;
+    @include m.tablet {
+      height: 18.9rem;
+    }
+    @include m.pc {
+      height: auto;
+    }
+  }
+
+  // single.pageページの真ん中のハンバーガー画像
+  &__medium {
+    display: block;
+    width: 79.7%;
+    height: 16.6rem;
+    object-fit: cover;
+    margin: 0 auto;
+    @include m.tablet {
+      width: 81%;
+      height: 35.8rem;
+    }
+    @include m.pc {
+      width: 43%;
+      height: auto;
+    }
+  }
+
+  // パネル状に並べてあるハンバーガー画像
+  &__tile {
+    width: 100%;
+    height:20.5rem;
+    object-fit: cover;
+    @include m.tablet {
+      width: 48%;
+    }
+    @include m.pc {
+      width: 32.3%;
+      height:19rem;
+    }
+  }
+}

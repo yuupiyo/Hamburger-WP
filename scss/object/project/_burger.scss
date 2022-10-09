@@ -1,0 +1,62 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
+
+// ハンバーガー画像とテキスト部分
+.p-burger-description {
+  &__first,
+  &__second {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__first {
+    margin-bottom: 3rem;
+    @include m.tablet {
+      margin-bottom: 11.7rem;
+    }
+    @include m.pc {
+      margin-bottom: 4.4rem;
+    }
+  }
+
+  &__second {
+    margin-bottom: 3rem;
+    @include m.tablet {
+      margin-bottom: 6.1rem;
+    }
+    @include m.pc {
+      margin-bottom: 4.4rem;
+    }
+  }
+
+  &__text {
+    width: 54%;
+    font-size: 1.6rem;
+    line-height: 1.43;
+    @include m.pc {
+      font-size: 1.23rem;
+    }
+    &::first-letter {
+      margin-left: 1rem;
+      @include m.pc {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+// タイル状のハンバーガー画像
+.p-burger-tile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+  @include m.tablet {
+    gap: 2rem 1.6rem;
+    margin-top: 24.1rem;
+  }
+  @include m.pc {
+    gap: 1.4rem;
+    margin-top: 4.2rem;
+  }
+}

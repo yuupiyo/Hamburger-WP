@@ -1,0 +1,33 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
+
+.c-border {
+  border: 0.1rem solid v.$color-grey;
+  @include m.pc {
+    border: 0.06rem solid v.$color-grey;
+  }
+
+  &__round {
+    border: 0.1rem solid v.$color-grey;
+    border-radius: 1rem;
+    @include m.pc {
+      border: 0.06rem solid v.$color-grey;
+      border-radius: 0.6rem;
+    }
+  } 
+
+  // 表の枠線
+  &__table {
+    border: 0.09rem solid v.$color-grey;
+  }
+
+  // 大きなボタンの枠線
+  &__big {
+    border: 0.1rem solid v.$color-grey;
+    border-radius: 2rem;
+    @include m.pc {
+      border: 0.098rem solid v.$color-grey;
+      border-radius: 1.5rem;
+    }
+  }
+}

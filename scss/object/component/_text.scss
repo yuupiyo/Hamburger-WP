@@ -1,0 +1,38 @@
+@use "../../foundation/mixin"  as m;
+@use "../../foundation/variable" as v;
+
+
+// font-weight
+.c-text {
+  &__font01 {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  &__font02 {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 400;
+    &--bold {
+      font-family: 'M PLUS 1p', sans-serif;
+      font-weight: bold;
+    }
+  }
+}
+
+// font-color
+.c-text-color {
+
+  // 文字色がグレーの部分
+  &__primary {
+    color: v.$color-grey;
+  }
+
+  // 文字色がホワイトの部分
+  &__secondary {
+    color: v.$color-white;
+  }
+
+  // 文字色がブラウンの部分
+  &__third {
+    color: v.$color-brown;
+  }
+}

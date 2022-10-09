@@ -1,0 +1,124 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
+
+.p-brunch-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem 4.9rem;
+  @include m.tablet {
+    flex-direction: row;
+    padding: 4rem;
+  }
+  @include m.pc {
+    padding: 7.5rem 6.9rem 8rem 6.9rem;
+  }
+
+  &__list {
+    width: 100%;
+    min-height: 64.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    @include m.tablet {
+      width: 47%;
+      min-height: 68.1rem;
+    }
+    @include m.pc {
+      min-height: 74.5rem;
+    }
+    &:first-child { 
+      color: v.$color-lightgrey;
+      background: url(../../../images/bg-takeout.jpg) no-repeat center center/cover;
+    }
+    &:nth-child(2) {
+      background: url(../../../images/bg-eatin.jpg) no-repeat center center/cover;
+      margin-top: 2rem;
+      @include m.tablet {
+        margin-top: 0;
+        margin-left: 6%;
+      }
+    }   
+  }
+
+  &__link {
+    display: block;
+  }
+
+  &__title {
+    display: inline-block;
+    font-size: 4.1rem;
+    line-height: 1.3;
+    position: relative;
+    margin: 1.1rem 0 0 1.5rem;
+    @include m.tablet {
+      font-size: 4.4rem;
+      margin: 1.2rem 0 0 1.1rem;
+    }
+    @include m.pc {
+      font-size: 5rem;
+      margin: 2rem 0 0 1.9rem;
+    }
+
+    &::after {
+      content: '';
+      width: 3.4rem;
+      height: 0.4rem;
+      display: inline-block;
+      background-color: v.$color-white;
+      position: absolute;
+      bottom: -1.53rem;
+      left: 0;
+      @include m.tablet {
+        width: 3.6rem;
+        bottom: -2.16rem;
+      }
+      @include m.pc {
+        width: 3.9rem;
+        bottom: -3.3rem;   
+      }
+    }
+  }
+
+  &__text-box {
+    min-height: 12.4rem;
+    margin: 0 1.5rem 1.5rem;
+    padding: 0.7rem 1rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    @include m.tablet {
+      min-height: 13.8rem;
+      padding: 0.7rem 1.5rem 1.5rem;
+    }
+    @include m.pc {
+      min-height: 10.3rem;
+      margin: 0 1.3rem 1.3rem;
+      padding: 1.2rem 2.1rem 2rem 2rem;
+    }
+  }
+
+  &__sub-title {
+    font-size: 2.2rem;
+    line-height: 1.1;
+    margin-bottom: 0.3rem;
+    @include m.tablet {
+      font-size: 2.4rem;
+      line-height: 1;
+    }
+    @include m.pc {
+      font-size: 1.5rem;
+      margin-bottom: 0.9rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    @include m.tablet {
+      font-size: 1.4rem;
+    }
+    @include m.pc {
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
+
+.c-cite-name {
+  text-decoration: underline;
+  color: #4A6C9B;
+  margin-left: 1.1rem;
+}

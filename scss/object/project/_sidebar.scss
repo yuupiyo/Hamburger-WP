@@ -1,0 +1,29 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
+
+.p-sidebar {
+  // タイトル部分
+  &__title {
+    display: none;
+    @include m.pc {
+      display: block;
+      font-size: 2.1rem;
+      line-height: 1.3;
+      color: v.$color-grey;
+      margin-bottom: 5.3rem;
+    }
+  }
+
+  // ×印の位置
+  &__button {
+    position: absolute;
+    top: 2.5rem;
+    right: 1.7rem;
+    @include m.tablet {
+      right: 2.5rem;
+    }
+    @include m.pc {
+      display: none;
+    }
+  }
+}

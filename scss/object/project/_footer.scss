@@ -1,0 +1,33 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
+
+.p-footer {
+  width: 100%;
+  // リスト部分
+  &__menu {
+    display: flex;
+    justify-content: center;
+  }
+  &__menu-item {
+    font-size: 2rem;
+    padding: 0 1.4rem;
+    border-right: 0.1rem solid v.$color-white;
+    @include m.pc {
+      font-size: 1.3rem;
+    }
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+
+  // copyright部分
+  &__copyright {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-top: 3.4rem;
+    @include m.pc {
+      font-size: 0.8rem;
+      margin-top: 2.1rem;
+    }
+  }
+}

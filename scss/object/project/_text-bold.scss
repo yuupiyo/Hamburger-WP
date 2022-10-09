@@ -1,0 +1,14 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
+
+.p-text-bold {
+  font-size: 1.6rem;
+  margin-top: 3rem;
+  @include m.tablet {
+    margin-top: 6rem;
+  }
+  @include m.pc {
+    font-size: 1.2rem;
+    margin-top: 3.75rem;
+  }
+}

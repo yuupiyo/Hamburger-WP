@@ -1,0 +1,27 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
+
+// 序列リスト部分
+.p-list__order {
+  padding: 3rem 0 6rem 2rem;
+  @include m.tablet {
+    padding: 6rem 0 6rem 6.5rem;
+  }
+  @include m.pc {
+    padding: 4.2rem 0 4.2rem 5rem;
+  }
+  & ol {
+    list-style: decimal;
+  }
+}
+
+// 順不同リスト部分
+.p-list__random {
+  padding: 0 0 3rem 0;
+  @include m.tablet {
+    padding: 0 0 6rem 5rem;
+  }
+  @include m.pc {
+    padding: 0 0 3.7rem 3.75rem;
+  }
+}

@@ -1,0 +1,10 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
+
+.p-preformatted {
+  width: 100%;
+  height: 23.7rem;
+  @include m.pc {
+    height: 19rem;
+  }
+}

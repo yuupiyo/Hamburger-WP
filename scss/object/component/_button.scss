@@ -1,0 +1,27 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
+
+.c-button {
+  text-align: center;
+  background: linear-gradient(0deg, #DED8D3, #F2EDE9);
+
+  // 大きなボタン部分
+  &__big {
+    text-align: center;
+    width: 100%;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    padding: 2.9rem 0;
+    @include m.tablet {
+      width: 60.1%;
+      margin-top: 6rem;
+      padding: 4.1rem 0;
+    }
+    @include m.pc {
+      width: 31.7%;
+      font-size: 1.2rem;
+      margin-top: 4.5rem;
+      padding: 3rem 0;
+    }
+  }
+}

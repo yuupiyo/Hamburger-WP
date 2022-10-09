@@ -1,0 +1,16 @@
+@use "../foundation/mixin" as m;
+@use "../foundation/variable" as v;
+
+.l-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: v.$bgcolor-header;
+  position: relative;
+  padding: 4rem 0;
+  @include m.pc {   
+    flex-direction: row; 
+    padding: 0 2rem 0 4.1rem;
+  }
+}
