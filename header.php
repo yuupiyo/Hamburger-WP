@@ -6,12 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Raise Techの最終課題です">
   <title>Hamburger</title>
-  <!-- css -->
-  <link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <?php wp_head(); ?>
 </head>
 <body>
   <div class="c-grid">
