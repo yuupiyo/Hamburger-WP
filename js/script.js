@@ -1,26 +1,26 @@
-$(function() {
+jQuery(function() {
   // menuボタンを押した時の挙動
-  $('.p-header__button').on('click', function() {
-    $('.c-grid__sidebar').removeClass('is-close');
-    $('.c-grid__sidebar').addClass('is-open');
-    $('.c-overlay').toggleClass('is-open');
-    $('body').toggleClass('fixed');
+  jQuery('.p-header__button').on('click', function() {
+    jQuery('.c-grid__sidebar').removeClass('is-close');
+    jQuery('.c-grid__sidebar').addClass('is-open');
+    jQuery('.c-overlay').toggleClass('is-open');
+    jQuery('body').toggleClass('fixed');
   });
 
   // ×ボタンを押した時の挙動
-  $('.p-sidebar__button').on('click', function() {
-    $('.c-grid__sidebar').removeClass('is-open');
-    $('.c-overlay').removeClass('is-open');
-    $('body').removeClass('fixed');
-    $('.c-grid__sidebar').addClass('is-close');
+  jQuery('.p-sidebar__button').on('click', function() {
+    jQuery('.c-grid__sidebar').removeClass('is-open');
+    jQuery('.c-overlay').removeClass('is-open');
+    jQuery('body').removeClass('fixed');
+    jQuery('.c-grid__sidebar').addClass('is-close');
   });  
 });
 
-$(function() {
-  $(window).on('resize', function() {
-    $('.c-grid__sidebar').removeClass('is-open');
-    $('.c-grid__sidebar').removeClass('is-close');
-    $('.c-overlay').removeClass('is-open');
-    $('body').removeClass('fixed');
+jQuery(function() {
+  jQuery(window).on('resize', function() {
+    jQuery('.c-grid__sidebar').removeClass('is-open');
+    jQuery('.c-grid__sidebar').removeClass('is-close');
+    jQuery('.c-overlay').removeClass('is-open');
+    jQuery('body').removeClass('fixed');
   });
 });
