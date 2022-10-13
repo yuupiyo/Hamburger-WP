@@ -47,7 +47,7 @@ object {
 }
 
 .l-footer {
-  background-image: url(../../../images/bg-footer.png);
+  background-image: url(/wp-content/uploads/2022/10/bg-footer.png);
   text-align: center;
   padding: 4rem 0 3.1rem;
 }
@@ -79,29 +79,29 @@ object {
   background-size: cover;
 }
 .c-background__main {
-  background-image: url(../../../images/bg-front-main-sp.jpg);
+  background-image: url(/wp-content/uploads/2022/10/bg-front-main-sp.jpg);
 }
 @media screen and (min-width: 600px) {
   .c-background__main {
-    background-image: url(../../../images/bg-front-main.jpg);
+    background-image: url(/wp-content/uploads/2022/10/bg-front-main.jpg);
   }
 }
 .c-background__archive {
-  background: url(../../../images/bg-archive-main-sp.png) no-repeat left center/cover;
+  background: url(/wp-content/uploads/2022/10/bg-archive-main-sp.png) no-repeat left center/cover;
 }
 @media screen and (min-width: 600px) {
   .c-background__archive {
-    background: url(../../../images/bg-archive-main.png) no-repeat center center/cover;
+    background: url(/wp-content/uploads/2022/10/images/bg-archive-main.png) no-repeat center center/cover;
   }
 }
 .c-background__single {
-  background-image: url(../../../images/bg-single-main.jpg);
+  background-image: url(/wp-content/uploads/2022/10/bg-single-main.jpg);
 }
 .c-background__page {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  background-image: url(../../../images/bg-page-main.jpg);
+  background-image: url(/wp-content/uploads/2022/10/bg-page-main.jpg);
 }
 
 .c-background-color__black {
@@ -761,7 +761,7 @@ object {
   content: "";
   width: 2.4rem;
   height: 2.4rem;
-  background: url(../../../images/search-icon.png) no-repeat center center/auto 100%;
+  background: url(/wp-content/uploads/2022/10/search-icon.png) no-repeat center center/auto 100%;
   display: inline-block;
   position: absolute;
   top: 50%;
@@ -1047,10 +1047,10 @@ object {
 }
 .p-brunch-menu__list:first-child {
   color: #EAEAEA;
-  background: url(../../../images/bg-takeout.jpg) no-repeat center center/cover;
+  background: url(/wp-content/uploads/2022/10/bg-takeout.jpg) no-repeat center center/cover;
 }
 .p-brunch-menu__list:nth-child(2) {
-  background: url(../../../images/bg-eatin.jpg) no-repeat center center/cover;
+  background: url(/wp-content/uploads/2022/10/bg-eatin.jpg) no-repeat center center/cover;
   margin-top: 2rem;
 }
 @media screen and (min-width: 600px) {
@@ -1226,7 +1226,7 @@ object {
   width: 100%;
   min-height: 69.1rem;
   padding: 4rem 4rem 5.1rem;
-  background-image: url(../../../images/bg-map-sp.png);
+  background-image: url(/wp-content/uploads/2022/10/bg-map-sp.png);
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.6);
   position: relative;
@@ -1235,7 +1235,7 @@ object {
   .p-access {
     min-height: 41.5rem;
     padding: 4rem 0 4rem 4.2rem;
-    background-image: url(../../../images/bg-map.png);
+    background-image: url(/wp-content/uploads/2022/10/bg-map.png);
     background-size: cover;
   }
 }

@@ -10,24 +10,25 @@
   // front-pageのmainvisual
   &__main {
     @extend .c-background;
-    background-image: url(../../../images/bg-front-main-sp.jpg);
+    background-image: url(/wp-content/uploads/2022/10/bg-front-main-sp.jpg);
     @include m.tablet {
-      background-image: url(../../../images/bg-front-main.jpg);
+      // background-image: url(../../../images/bg-front-main.jpg);
+      background-image: url(/wp-content/uploads/2022/10/bg-front-main.jpg);
     }
   }
 
   // archive,archive-searchページのタイトル部分
   &__archive {
-    background: url(../../../images/bg-archive-main-sp.png) no-repeat left center / cover;
+    background: url(/wp-content/uploads/2022/10/bg-archive-main-sp.png) no-repeat left center / cover;
     @include m.tablet {
-      background: url(../../../images/bg-archive-main.png) no-repeat center center / cover;
+      background: url(/wp-content/uploads/2022/10/images/bg-archive-main.png) no-repeat center center / cover;
     }
   }
 
   // singleページのタイトル部分
   &__single {
     @extend .c-background;
-    background-image: url(../../../images/bg-single-main.jpg);
+    background-image: url(/wp-content/uploads/2022/10/bg-single-main.jpg);
   }
 
   // pageページのタイトル部分
@@ -35,7 +36,7 @@
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    background-image: url(../../../images/bg-page-main.jpg);
+    background-image: url(/wp-content/uploads/2022/10/bg-page-main.jpg);
   }
 }
 
