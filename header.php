@@ -15,15 +15,15 @@
     <header class="c-grid__header l-header p-header">
       <h1 class="p-header__title c-text__font01 c-text-color__primary"><a href=""<?php echo esc_url(home_url('/')); ?>><?php bloginfo('name'); ?></a></h1>
 
-      <form action="" class="p-search">
+      <!-- <form action="" class="p-search">
         <label for="">
           <input type="text" class="p-search__input c-border__round">
         </label>
         <label for="">
           <input class="p-search__button c-text__font02--bold c-text-color__primary c-border__round c-button" type="submit" value="検索">
         </label>
-      </form>
-
+      </form> -->
+      <?php get_search_form(); ?>
       <!-- ハンバーガーボタン(Menu)部分 -->
       <button class="p-header__button c-text__font01 c-text-color__primary">
         Menu
