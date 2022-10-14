@@ -7,7 +7,7 @@
       </button>
 
       <h2 class="p-sidebar__title c-text__font01">Menu</h2>
-      <nav>
+      <!-- <nav>
         <dl class="c-nav__list">
           <dt class="c-nav__title c-text__font02--bold"><a href="./archive.html">バーガー</a></dt>
           <dd class="c-nav__list-item c-text__font02"><a href="#">ハンバーガー</a></dd>
@@ -36,7 +36,16 @@
           <dd class="c-nav__list-item c-text__font02"><a href="#">紅茶（Ice/Hot）</a></dd>
           <dd class="c-nav__list-item c-text__font02"><a href="#">コーヒー（Ice/Hot）</a></dd>
         </dl>
-      </nav>
+      </nav> -->
+      <?php
+        wp_nav_menu(
+          array(
+            'theme_location' => 'categorymenu',
+            'container' => 'nav',
+            'menu_class' => 'c-nav__list',
+          )
+        );
+      ?>
     </aside>
     <!-- サイドバー後ろの黒い透過部分 -->
     <div class="c-overlay"></div>
