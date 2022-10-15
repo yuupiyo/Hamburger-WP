@@ -38,7 +38,7 @@ function hamburger_script() {
   // Google Fonts
   wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&family=M+PLUS+1:wght@100;300;500;700;800;900&display=swap', array());
   // メインのCSSファイル
-  wp_enqueue_style('hamburger-css', get_theme_file_uri('/css/style.css'), array('reset-css'), '1.0.0');
+  wp_enqueue_style('hamburger-css', get_theme_file_uri('/css/style.css') , array('reset-css'), '1.0.0');
   // テーマデフォルトCSSファイル
   wp_enqueue_style('hamburger-style', get_theme_file_uri('/style.css'), array(), '1.0.0');
   // jQuery読み込み
