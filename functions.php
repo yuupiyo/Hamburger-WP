@@ -13,6 +13,7 @@ function custom_theme_support() {
   add_theme_support('menus');
   register_nav_menus( array(
     'categorymenu' => 'カテゴリーメニュー',
+    'footermenu' => 'フッターメニュー',
   ));
   add_theme_support('editor-styles');
   add_editor_style();
