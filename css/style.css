@@ -640,36 +640,6 @@ object {
     margin-bottom: 3rem;
   }
 }
-.c-nav__list .menu-item-type-taxonomy a {
-  display: block;
-  font-family: "M PLUS 1p", sans-serif;
-  font-weight: bold;
-  font-size: 2.4rem;
-  line-height: 1.5;
-  margin-bottom: 4rem;
-}
-@media screen and (min-width: 1025px) {
-  .c-nav__list .menu-item-type-taxonomy a {
-    font-size: 1.5rem;
-    margin-bottom: 2.5rem;
-  }
-}
-.c-nav__list .menu-item-type-taxonomy .sub-menu .menu-item-type-post_type a {
-  display: block;
-  font-family: "M PLUS 1p", sans-serif;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 1.45;
-  margin-bottom: 2.3rem;
-  margin-left: 2rem;
-}
-@media screen and (min-width: 1025px) {
-  .c-nav__list .menu-item-type-taxonomy .sub-menu .menu-item-type-post_type a {
-    font-size: 1.3rem;
-    margin-bottom: 1.4rem;
-    margin-left: 1.3rem;
-  }
-}
 
 .p-header {
   width: 100%;
@@ -1593,6 +1563,38 @@ object {
   .p-text-bold {
     font-size: 1.2rem;
     margin-top: 3.75rem;
+  }
+}
+
+.menu-item-type-taxonomy a {
+  display: block;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 1025px) {
+  .menu-item-type-taxonomy a {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.menu-item-type-post_type a {
+  display: block;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.45;
+  margin-bottom: 2.3rem;
+  margin-left: 2rem;
+}
+@media screen and (min-width: 1025px) {
+  .menu-item-type-post_type a {
+    font-size: 1.3rem;
+    margin-bottom: 1.4rem;
+    margin-left: 1.3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
