@@ -64,7 +64,7 @@ object {
 
 .l-sidebar {
   background-color: #F2EDE9;
-  padding-top: 21.2rem;
+  padding-top: 21rem;
   padding-left: 4.6rem;
 }
 @media screen and (min-width: 1025px) {
@@ -675,9 +675,9 @@ object {
 @media screen and (min-width: 1025px) {
   .p-sidebar__title {
     display: block;
-    font-size: 2.1rem;
+    font-size: 2.3rem;
     color: #707070;
-    margin-bottom: 5rem;
+    margin-bottom: 4.8rem;
   }
 }
 .p-sidebar__button {
@@ -1566,6 +1566,9 @@ object {
   }
 }
 
+.menu-item-type-taxonomy {
+  margin-bottom: 4rem;
+}
 .menu-item-type-taxonomy a {
   display: block;
   font-family: "M PLUS 1p", sans-serif;
@@ -1576,7 +1579,7 @@ object {
 }
 @media screen and (min-width: 1025px) {
   .menu-item-type-taxonomy a {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 2.5rem;
   }
 }
