@@ -3,10 +3,14 @@
 
 .p-mainvisual {
   width: 100%;
-  height: 28.5rem;
   position: relative;
-  @include m.pc {
-    height: 33.1rem;
+  & img {
+    width: 100%;
+    height: 28.5rem;
+    object-fit: cover;
+    @include m.pc {
+      height: 33.1rem;
+    }
   }
 
   &__title {

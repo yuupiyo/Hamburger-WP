@@ -917,11 +917,16 @@ object {
 
 .p-mainvisual {
   width: 100%;
-  height: 28.5rem;
   position: relative;
 }
+.p-mainvisual img {
+  width: 100%;
+  height: 28.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 @media screen and (min-width: 1025px) {
-  .p-mainvisual {
+  .p-mainvisual img {
     height: 33.1rem;
   }
 }
