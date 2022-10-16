@@ -73,18 +73,10 @@ object {
   }
 }
 
-.c-background, .c-background__single, .c-background__main {
+.c-background, .c-background__single {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-}
-.c-background__main {
-  background-image: url(/wp-content/uploads/2022/10/bg-front-main-sp.jpg);
-}
-@media screen and (min-width: 600px) {
-  .c-background__main {
-    background-image: url(/wp-content/uploads/2022/10/bg-front-main.jpg);
-  }
 }
 .c-background__archive {
   background: url(/wp-content/uploads/2022/10/bg-archive-main-sp.png) no-repeat left center/cover;

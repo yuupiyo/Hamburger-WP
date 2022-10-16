@@ -3,7 +3,8 @@
     <!-- article -->
     <article class="c-grid__article c-background-color__article">
       <!-- mainvisual部分 -->
-      <div class="p-mainvisual c-background__main" >
+      <div class="p-mainvisual">
+        <img src="<?php echo get_theme_file_uri( '/images/bg-front-main.jpg'); ?>" alt="">
         <h2 class="p-mainvisual__title c-text__font02--bold c-text-color__secondary">ダミーサイト</h2>
       </div>
 

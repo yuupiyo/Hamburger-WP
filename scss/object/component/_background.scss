@@ -8,14 +8,14 @@
   background-size: cover;
 
   // front-pageのmainvisual
-  &__main {
-    @extend .c-background;
-    background-image: url(/wp-content/uploads/2022/10/bg-front-main-sp.jpg);
-    @include m.tablet {
+  // &__main {
+  //   @extend .c-background;
+  //   background-image: url(/wp-content/uploads/2022/10/bg-front-main-sp.jpg);
+  //   @include m.tablet {
       // background-image: url(../../../images/bg-front-main.jpg);
-      background-image: url(/wp-content/uploads/2022/10/bg-front-main.jpg);
-    }
-  }
+    //   background-image: url(/wp-content/uploads/2022/10/bg-front-main.jpg);
+    // }
+  // }
 
   // archive,archive-searchページのタイトル部分
   &__archive {
