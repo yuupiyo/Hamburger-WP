@@ -47,7 +47,7 @@ object {
 }
 
 .l-footer {
-  background-image: url(/wp-content/uploads/2022/10/bg-footer.png);
+  background-image: url(/wp-content/themes/hamburger-wp/images/bg-footer.png);
   text-align: center;
   padding: 4rem 0 3.1rem;
 }
@@ -73,27 +73,35 @@ object {
   }
 }
 
-.c-background, .c-background__single {
+.c-background, .c-background__single, .c-background__main {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
+.c-background__main {
+  background-image: url(/wp-content/themes/hamburger-wp/images/bg-front-main-sp.jpg);
+}
+@media screen and (min-width: 600px) {
+  .c-background__main {
+    background-image: url(/wp-content/themes/hamburger-wp/images/bg-front-main.jpg);
+  }
+}
 .c-background__archive {
-  background: url(/wp-content/uploads/2022/10/bg-archive-main-sp.png) no-repeat left center/cover;
+  background: url(/wp-content/themes/hamburger-wp/images/bg-archive-main-sp.png) no-repeat left center/cover;
 }
 @media screen and (min-width: 600px) {
   .c-background__archive {
-    background: url(/wp-content/uploads/2022/10/images/bg-archive-main.png) no-repeat center center/cover;
+    background: url(/wp-content/themes/hamburger-wp/images/images/bg-archive-main.png) no-repeat center center/cover;
   }
 }
 .c-background__single {
-  background-image: url(/wp-content/uploads/2022/10/bg-single-main.jpg);
+  background-image: url(/wp-content/themes/hamburger-wp/images/bg-single-main.jpg);
 }
 .c-background__page {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  background-image: url(/wp-content/uploads/2022/10/bg-page-main.jpg);
+  background-image: url(/wp-content/themes/hamburger-wp/images/bg-page-main.jpg);
 }
 
 .c-background-color__black {
@@ -918,15 +926,10 @@ object {
 .p-mainvisual {
   width: 100%;
   position: relative;
-}
-.p-mainvisual img {
-  width: 100%;
   height: 28.5rem;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 @media screen and (min-width: 1025px) {
-  .p-mainvisual img {
+  .p-mainvisual {
     height: 33.1rem;
   }
 }
@@ -1020,10 +1023,10 @@ object {
 }
 .p-brunch-menu__list:first-child {
   color: #EAEAEA;
-  background: url(/wp-content/uploads/2022/10/bg-takeout.jpg) no-repeat center center/cover;
+  background: url(/wp-content/themes/hamburger-wp/images/bg-takeout.jpg) no-repeat center center/cover;
 }
 .p-brunch-menu__list:nth-child(2) {
-  background: url(/wp-content/uploads/2022/10/bg-eatin.jpg) no-repeat center center/cover;
+  background: url(/wp-content/themes/hamburger-wp/images/bg-eatin.jpg) no-repeat center center/cover;
   margin-top: 2rem;
 }
 @media screen and (min-width: 600px) {
@@ -1199,7 +1202,7 @@ object {
   width: 100%;
   min-height: 69.1rem;
   padding: 4rem 4rem 5.1rem;
-  background-image: url(/wp-content/uploads/2022/10/bg-map-sp.png);
+  background-image: url(/wp-content/themes/hamburger-wp/images/bg-map-sp.png);
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.6);
   position: relative;
@@ -1208,7 +1211,7 @@ object {
   .p-access {
     min-height: 41.5rem;
     padding: 4rem 0 4rem 4.2rem;
-    background-image: url(/wp-content/uploads/2022/10/bg-map.png);
+    background-image: url(/wp-content/themes/hamburger-wp/images/bg-map.png);
     background-size: cover;
   }
 }

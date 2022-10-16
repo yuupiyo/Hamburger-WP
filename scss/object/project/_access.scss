@@ -5,14 +5,14 @@
   width: 100%;
   min-height: 69.1rem;
   padding: 4rem 4rem 5.1rem;
-  background-image: url(/wp-content/uploads/2022/10/bg-map-sp.png);
+  background-image: url(/wp-content/themes/hamburger-wp/images/bg-map-sp.png);
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.6);
   position: relative;
   @include m.tablet {
     min-height: 41.5rem;
     padding: 4rem 0 4rem 4.2rem;
-    background-image: url(/wp-content/uploads/2022/10/bg-map.png);
+    background-image: url(/wp-content/themes/hamburger-wp/images/bg-map.png);
     background-size: cover;
   }
   @include m.pc {
