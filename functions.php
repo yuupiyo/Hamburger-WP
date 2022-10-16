@@ -42,7 +42,6 @@ function hamburger_script() {
   // テーマデフォルトCSSファイル
   wp_enqueue_style('hamburger-style', get_theme_file_uri('/style.css'), array(), '1.0.0');
   // jQuery読み込み
-  // wp_enqueue_script('jquery', '//code.jquery.com/jquery-3.6.1.min.js', '', '3.6.1', true);
   wp_enqueue_script('scriptjs', get_theme_file_uri('/js/script.js'), array('jquery'), wp_get_theme()->get( 'Version' ), false );
 }
 add_action('wp_enqueue_scripts', 'hamburger_script');
