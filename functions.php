@@ -11,6 +11,7 @@ function custom_theme_support() {
   add_theme_support('post-thumbnails');
   add_theme_support('title-tag');
   add_theme_support('menus');
+  add_theme_support('automatic-feed-links');
   register_nav_menus( array(
     'categorymenu' => 'カテゴリーメニュー',
     'footermenu' => 'フッターメニュー',
