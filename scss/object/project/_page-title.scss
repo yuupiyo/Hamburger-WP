@@ -14,12 +14,13 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     position: absolute;
     top: 10.2rem;
     left: 3.7rem;
     @include m.tablet {
       flex-direction: row;
+      align-items: center;
       gap: 2rem;
       left: 8.6rem;
     }
@@ -40,6 +41,9 @@
   }
   &__sub {
     font-size: 1.6rem;
+    @include m.tablet {
+      margin-top: 1rem;
+    }
     @include m.pc {
       font-size: 1.2rem;
     }

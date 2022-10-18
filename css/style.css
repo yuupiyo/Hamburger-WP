@@ -1302,7 +1302,7 @@ object {
 .p-page-title__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   position: absolute;
   top: 10.2rem;
   left: 3.7rem;
@@ -1310,6 +1310,7 @@ object {
 @media screen and (min-width: 600px) {
   .p-page-title__wrapper {
     flex-direction: row;
+    align-items: center;
     gap: 2rem;
     left: 8.6rem;
   }
@@ -1336,6 +1337,11 @@ object {
 }
 .p-page-title__sub {
   font-size: 1.6rem;
+}
+@media screen and (min-width: 600px) {
+  .p-page-title__sub {
+    margin-top: 1rem;
+  }
 }
 @media screen and (min-width: 1025px) {
   .p-page-title__sub {
