@@ -7,7 +7,7 @@
       <div class="p-page-title__archive c-background__archive c-background-color__black">
         <div class="p-page-title__wrapper">
           <h1 class="p-page-title__main c-text__font01 c-text-color__secondary">Menu:</h1>
-          <p class="p-page-title__sub c-text__font02--bold c-text-color__secondary">チーズバーガー</p>
+          <p class="p-page-title__sub c-text__font02--bold c-text-color__secondary"><?php single_cat_title(); ?></p>
         </div>
       </div>
       <div class="c-inner">
@@ -22,7 +22,7 @@
         <section class="p-menu-list">
           <figure class="c-card">
             <a href="#" class="c-card__link">
-              <img src="./images/img-burger.jpg" alt="ハンバーガーのイメージ画像" class="p-menu-list__image c-card__image">
+              <img src="/wp-content/themes/hamburger-wp/images/img-burger.jpg" alt="ハンバーガーのイメージ画像" class="p-menu-list__image c-card__image">
               <figcaption class="p-menu-list__wrapper c-background-color__brown">
                 <div class="p-menu-list__content">
                   <h2 class="c-card__title c-text__font02--bold c-text-color__secondary">チーズバーガー</h2>
@@ -40,7 +40,7 @@
         <section class="p-menu-list">
           <figure class="c-card">
             <a href="#" class="c-card__link">
-              <img src="./images/img-burger.jpg" alt="ハンバーガーのイメージ画像" class="p-menu-list__image c-card__image">
+              <img src="/wp-content/themes/hamburger-wp/images/img-burger.jpg" alt="ハンバーガーのイメージ画像" class="p-menu-list__image c-card__image">
               <figcaption class="p-menu-list__wrapper c-background-color__brown">
                 <div class="p-menu-list__content">
                   <h2 class="c-card__title c-text__font02--bold c-text-color__secondary">ダブルチーズバーガー</h2>
@@ -58,7 +58,7 @@
         <section class="p-menu-list">
           <figure class="c-card">
             <a href="#" class="c-card__link">
-              <img src="./images/img-burger.jpg" alt="ハンバーガーのイメージ画像" class="p-menu-list__image c-card__image">
+              <img src="/wp-content/themes/hamburger-wp/images/img-burger.jpg" alt="ハンバーガーのイメージ画像" class="p-menu-list__image c-card__image">
               <figcaption class="p-menu-list__wrapper c-background-color__brown">
                 <div class="p-menu-list__content">
                   <h2 class="c-card__title c-text__font02--bold c-text-color__secondary">スペシャルチーズバーガー</h2>
