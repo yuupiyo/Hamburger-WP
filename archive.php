@@ -19,25 +19,33 @@
         </section>
 
         <!-- カード部分 -->
-        <section class="p-menu-list">
-          <figure class="c-card">
-            <a href="#" class="c-card__link">
-              <img src="/wp-content/themes/hamburger-wp/images/img-burger.jpg" alt="ハンバーガーのイメージ画像" class="p-menu-list__image c-card__image">
-              <figcaption class="p-menu-list__wrapper c-background-color__brown">
-                <div class="p-menu-list__content">
-                  <h2 class="c-card__title c-text__font02--bold c-text-color__secondary">チーズバーガー</h2>
-                  <h3 class="c-card__sub-title c-text__font02--bold c-text-color__secondary">小見出しが入ります</h3>
-                  <p class="c-card__text c-text__font02 c-text-color__secondary">
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                  </p>
-                </div>
-                <buttom class="p-menu-list__button c-card__button c-background-color__white c-text__font02--bold c-text-color__primary">詳しく見る</buttom>
-              </figcaption>
-            </a>
-          </figure>
-        </section>
+        <?php if ( have_posts() ): ?>
+          <?php while ( have_posts() ): the_post(); ?>
+            <section id="post-<?php the_ID(); ?>" <?php post_class( 'p-menu-list' ); ?>>
+              <figure class="c-card">
+                <a href="<?php the_permalink(); ?>" <?php post_class( 'c-card__link' ); ?>>
+                    <?php if ( has_post_thumbnail() ): ?>
+                      <?php the_post_thumbnail("full", array("alt" => get_the_title(), "class" => "p-menu-list__image c-card__image")); ?>
+                    <?php else: ?>
+                      <img src="/wp-content/themes/hamburger-wp/images/img-burger.jpg" alt="ハンバーガーのイメージ画像" class="p-menu-list__image c-card__image">
+                    <?php endif; ?>
+                  <figcaption class="p-menu-list__wrapper c-background-color__brown">
+                    <div class="p-menu-list__content">
+                      <h2 class="c-card__title c-text__font02--bold c-text-color__secondary"><?php the_title(); ?></h2>
+                      <h3 class="c-card__sub-title c-text__font02--bold c-text-color__secondary">小見出しが入ります</h3>
+                      <p class="c-card__text c-text__font02 c-text-color__secondary">
+                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                      </p>
+                    </div>
+                    <buttom onclick="location.href='<?php the_permalink(); ?>'" class="p-menu-list__button c-card__button c-background-color__white c-text__font02--bold c-text-color__primary">詳しく見る</buttom>
+                  </figcaption>
+                </a>
+              </figure>
+            </section>
+          <?php endwhile; ?>
+        <?php endif; ?>
 
-        <section class="p-menu-list">
+        <!-- <section class="p-menu-list">
           <figure class="c-card">
             <a href="#" class="c-card__link">
               <img src="/wp-content/themes/hamburger-wp/images/img-burger.jpg" alt="ハンバーガーのイメージ画像" class="p-menu-list__image c-card__image">
@@ -71,7 +79,7 @@
               </figcaption>
             </a>
           </figure>
-        </section>
+        </section> -->
 
         <section class="c-pagination">
           <p class="c-pagination__count c-text__font01 c-text-color__primary">page 1/10</p>
