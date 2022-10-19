@@ -27,7 +27,7 @@
                     <?php if ( has_post_thumbnail() ): ?>
                       <?php the_post_thumbnail("full", array("alt" => get_the_title(), "class" => "p-menu-list__image c-card__image")); ?>
                     <?php else: ?>
-                      <img src="/wp-content/themes/hamburger-wp/images/img-burger.jpg" alt="ハンバーガーのイメージ画像" class="p-menu-list__image c-card__image">
+                      <img src="/wp-content/themes/hamburger-wp/images/no-image.svg" alt="no-imageのイメージ画像" class="p-menu-list__image c-card__image">
                     <?php endif; ?>
                   <figcaption class="p-menu-list__wrapper c-background-color__brown">
                     <div class="p-menu-list__content">
