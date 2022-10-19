@@ -45,43 +45,7 @@
           <?php endwhile; else: ?>
             <p>記事はありません。</p>
         <?php endif; ?>
-
-        <!-- <section class="p-menu-list">
-          <figure class="c-card">
-            <a href="#" class="c-card__link">
-              <img src="/wp-content/themes/hamburger-wp/images/img-burger.jpg" alt="ハンバーガーのイメージ画像" class="p-menu-list__image c-card__image">
-              <figcaption class="p-menu-list__wrapper c-background-color__brown">
-                <div class="p-menu-list__content">
-                  <h2 class="c-card__title c-text__font02--bold c-text-color__secondary">ダブルチーズバーガー</h2>
-                  <h3 class="c-card__sub-title c-text__font02--bold c-text-color__secondary">小見出しが入ります</h3>
-                  <p class="c-card__text c-text__font02 c-text-color__secondary">
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                  </p>
-                </div>
-                <buttom class="p-menu-list__button c-card__button c-background-color__white c-text__font02--bold c-text-color__primary">詳しく見る</buttom>
-              </figcaption>
-            </a>
-          </figure>
-        </section>
-
-        <section class="p-menu-list">
-          <figure class="c-card">
-            <a href="#" class="c-card__link">
-              <img src="/wp-content/themes/hamburger-wp/images/img-burger.jpg" alt="ハンバーガーのイメージ画像" class="p-menu-list__image c-card__image">
-              <figcaption class="p-menu-list__wrapper c-background-color__brown">
-                <div class="p-menu-list__content">
-                  <h2 class="c-card__title c-text__font02--bold c-text-color__secondary">スペシャルチーズバーガー</h2>
-                  <h3 class="c-card__sub-title c-text__font02--bold c-text-color__secondary">小見出しが入ります</h3>
-                  <p class="c-card__text c-text__font02 c-text-color__secondary">
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                  </p>
-                </div>
-                <buttom class="p-menu-list__button c-card__button c-background-color__white c-text__font02--bold c-text-color__primary">詳しく見る</buttom>
-              </figcaption>
-            </a>
-          </figure>
-        </section> -->
-
+        
         <section class="c-pagination">
           <p class="c-pagination__count c-text__font01 c-text-color__primary">page 1/10</p>
           <ul class="c-pagination__list">
