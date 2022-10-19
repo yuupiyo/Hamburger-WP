@@ -42,7 +42,8 @@
                 </a>
               </figure>
             </section>
-          <?php endwhile; ?>
+          <?php endwhile; else: ?>
+            <p>記事はありません。</p>
         <?php endif; ?>
 
         <!-- <section class="p-menu-list">
