@@ -13,7 +13,7 @@
 
     <!-- header -->
     <header class="c-grid__header l-header p-header">
-      <h1 class="p-header__title c-text__font01 c-text-color__primary"><a href=""<?php echo esc_url(home_url('/')); ?>><?php bloginfo('name'); ?></a></h1>
+      <h1 class="p-header__title c-text__font01 c-text-color__primary"><a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a></h1>
 
       <?php get_search_form(); ?>
       
