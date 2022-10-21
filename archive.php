@@ -46,7 +46,8 @@
             <p>記事はありません。</p>
         <?php endif; ?>
         
-        <section class="c-pagination">
+        <?php wp_pagenavi(); ?>
+        <!-- <section class="c-pagination">
           <p class="c-pagination__count c-text__font01 c-text-color__primary">page 1/10</p>
           <ul class="c-pagination__list">
             <li class="c-pagination__prev c-text-color__primary c-text__font01">《</li>
@@ -61,7 +62,7 @@
             <li class="c-pagination__number c-background-color__white c-text-color__primary c-text__font01 c-border">9</li>
             <li class="c-pagination__next c-text-color__primary c-text__font01">》</li>
           </ul>
-        </section>
+        </section> -->
       </div>
     </article>
 
