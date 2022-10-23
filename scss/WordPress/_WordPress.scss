@@ -33,3 +33,62 @@
     }
   }
 }
+
+// ページネーション部分
+.wp-pagenavi {
+  padding-top: 3.95rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  @include m.pc {
+    padding-top: 9.1rem;
+    padding-bottom: 4rem;
+  }
+
+  & .pages {
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: v.$color-grey;
+    @include m.pc {
+      font-size: 1.2rem;
+    }
+  }
+
+  & .previouspostslink, 
+  & .nextpostslink {
+    border: none;
+    font-size: 3rem;
+    color: v.$color-grey;
+    padding: 0;
+    vertical-align: sub;
+    @include m.tablet {
+      margin: 0 1.73rem;
+    }
+  }
+
+  & span.current {
+    border-color: v.$color-grey;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: v.$color-white;
+    background-color: v.$color-brown;
+    padding: 0.7rem 1.3rem;
+    margin: 0 0.75rem;
+    @include m.pc {
+      font-size: 1.2rem;
+    }
+  }
+
+  & .page {
+    border-color: v.$color-grey;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: v.$color-grey;
+    background-color: v.$color-white;
+    padding: 0.7rem 1.3rem;
+    margin: 0 0.75rem;
+    @include m.pc {
+      font-size: 1.2rem;
+    }
+  }
+}
