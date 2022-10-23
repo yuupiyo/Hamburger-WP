@@ -92,3 +92,31 @@
     }
   }
 }
+
+// search.phpのタイトル部分
+.p-search-title {
+  font-size: 2.8rem;
+  padding-bottom: 3rem;
+  @include m.tablet {
+    font-size: 3.6rem;
+    padding-bottom: 2.5rem;
+  }
+  @include m.pc {
+    font-size: 2.8rem;
+    padding-bottom: 1.6rem;
+  }
+}
+
+// 検索結果がない時の文章
+.p-search-text {
+  font-size: 2.8rem;
+  padding-bottom: 3rem;
+  @include m.tablet {
+    font-size: 3.6rem;
+    padding-bottom: 2.5rem;
+  }
+  @include m.pc {
+    font-size: 2.8rem;
+    padding-bottom: 1.6rem;
+  }
+}

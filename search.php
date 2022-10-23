@@ -14,7 +14,7 @@
       
         <!-- カード部分 -->
         <?php if ( have_posts() ): ?>
-          <p class="p-search-title"><?php echo get_search_query(); ?>の検索結果:<?php echo $wp_query->found_posts; ?>件</p>
+          <p class="p-search-title c-text__font02--bold"><?php echo get_search_query(); ?>の検索結果:<?php echo $wp_query->found_posts; ?>件</p>
           <?php while ( have_posts() ): the_post(); ?>
             <section id="post-<?php the_ID(); ?>" <?php post_class( 'p-menu-list' ); ?>>
               <figure class="c-card">
@@ -38,7 +38,7 @@
               </figure>
             </section>
           <?php endwhile; else: ?>
-            <p>検索結果はありません。</p>
+            <p class="p-search-text">検索結果はありません。</p>
         <?php endif; ?>
 
         <?php wp_pagenavi(); ?>
