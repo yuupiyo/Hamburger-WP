@@ -7,5 +7,36 @@
     @include m.pc {
       margin-bottom: 3rem;
     }
+
+    // sidebar部分
+    & .menu-item-type-taxonomy {
+      margin-bottom: 4rem;
+      & a {
+        display: block;
+        font-family: 'M PLUS 1p', sans-serif;
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 1.5;
+        margin-bottom: 4rem;
+        @include m.pc {
+          font-size: 1.8rem;
+          margin-bottom: 2.5rem;
+        }
+      }
+    }
+    & .menu-item-type-post_type a {
+      display: block;
+      font-family: 'M PLUS 1p', sans-serif;
+      font-weight: 400;
+      font-size: 2rem;
+      line-height: 1.45;
+      margin-bottom: 2.3rem;
+      margin-left: 2rem;
+      @include m.pc {
+        font-size: 1.5rem;
+        margin-bottom: 1.4rem;
+        margin-left: 1.3rem;
+      }
+    }
   }
 }
