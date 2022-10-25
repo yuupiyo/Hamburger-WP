@@ -87,3 +87,36 @@
     padding-bottom: 1.6rem;
   }
 }
+
+// singleページの引用文部分
+// class名を.p-blockquoteから.wp-block-quoteに変更
+// CSSは.p-blockquoteのをそのまま流用
+.wp-block-quote {
+  background-color: v.$bgcolor-grey;
+  padding: 3rem 1.6rem 3rem 2rem;
+  @include m.tablet {
+    padding: 5rem 5.6rem 6rem 5rem;
+  }
+  @include m.pc {
+    padding: 3.2rem 3.7rem 3.2rem 3.2rem;
+  }
+  & p {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-bottom: 6rem;
+    @include m.pc {
+      font-size: 1.3rem;
+      margin-bottom: 3.7rem;
+    }
+  }
+
+  & cite {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    @include m.pc {
+      font-size: 1.3rem;
+    }
+  }
+}

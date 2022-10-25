@@ -994,38 +994,6 @@ object {
   }
 }
 
-.p-blockquote {
-  padding: 3rem 1.6rem 3rem 2rem;
-}
-@media screen and (min-width: 600px) {
-  .p-blockquote {
-    padding: 5rem 5.6rem 6rem 5rem;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .p-blockquote {
-    padding: 3.2rem 3.7rem 3.2rem 3.2rem;
-  }
-}
-.p-blockquote__text {
-  font-size: 1.6rem;
-  margin-bottom: 6rem;
-}
-@media screen and (min-width: 1025px) {
-  .p-blockquote__text {
-    font-size: 1.3rem;
-    margin-bottom: 3.7rem;
-  }
-}
-.p-blockquote__cite {
-  font-size: 1.6rem;
-}
-@media screen and (min-width: 1025px) {
-  .p-blockquote__cite {
-    font-size: 1.3rem;
-  }
-}
-
 .p-brunch-menu {
   width: 100%;
   display: flex;
@@ -1708,6 +1676,43 @@ object {
   .p-search-text {
     font-size: 2.8rem;
     padding-bottom: 1.6rem;
+  }
+}
+
+.wp-block-quote {
+  background-color: #F2EDE9;
+  padding: 3rem 1.6rem 3rem 2rem;
+}
+@media screen and (min-width: 600px) {
+  .wp-block-quote {
+    padding: 5rem 5.6rem 6rem 5rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .wp-block-quote {
+    padding: 3.2rem 3.7rem 3.2rem 3.2rem;
+  }
+}
+.wp-block-quote p {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 6rem;
+}
+@media screen and (min-width: 1025px) {
+  .wp-block-quote p {
+    font-size: 1.3rem;
+    margin-bottom: 3.7rem;
+  }
+}
+.wp-block-quote cite {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 1025px) {
+  .wp-block-quote cite {
+    font-size: 1.3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
