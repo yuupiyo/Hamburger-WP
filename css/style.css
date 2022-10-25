@@ -441,6 +441,76 @@ object {
     padding: 3.8rem 7rem 22.1rem;
   }
 }
+.c-inner--single h2 {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: bold;
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 600px) {
+  .c-inner--single h2 {
+    font-size: 3.6rem;
+    margin-bottom: 6rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-inner--single h2 {
+    font-size: 2.6rem;
+    margin-bottom: 3.7rem;
+  }
+}
+.c-inner--single p {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 3.4rem;
+}
+@media screen and (min-width: 600px) {
+  .c-inner--single p {
+    margin-bottom: 6rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-inner--single p {
+    font-size: 1.2rem;
+    margin-bottom: 3.7rem;
+  }
+}
+.c-inner--single h3 {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-bottom: 3.1rem;
+}
+@media screen and (min-width: 600px) {
+  .c-inner--single h3 {
+    font-size: 2.8rem;
+    margin-bottom: 6rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-inner--single h3 {
+    font-size: 1.9rem;
+    margin-bottom: 3.7rem;
+  }
+}
+.c-inner--single h4 {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 3.7rem;
+}
+@media screen and (min-width: 600px) {
+  .c-inner--single h4 {
+    margin-bottom: 7.6rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-inner--single h4 {
+    font-size: 1.4rem;
+    margin-bottom: 3.7rem;
+  }
+}
 
 .c-list-item {
   font-size: 1.6rem;
@@ -846,68 +916,6 @@ object {
 
 .p-heading {
   width: 100%;
-}
-.p-heading__h2 {
-  font-size: 2.8rem;
-  margin-bottom: 3rem;
-}
-@media screen and (min-width: 600px) {
-  .p-heading__h2 {
-    font-size: 3.6rem;
-    margin-bottom: 6rem;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .p-heading__h2 {
-    font-size: 2.6rem;
-    margin-bottom: 3.7rem;
-  }
-}
-.p-heading__text {
-  font-size: 1.6rem;
-  margin-bottom: 3.4rem;
-}
-@media screen and (min-width: 600px) {
-  .p-heading__text {
-    margin-bottom: 6rem;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .p-heading__text {
-    font-size: 1.2rem;
-    margin-bottom: 3.7rem;
-  }
-}
-.p-heading__h3 {
-  font-size: 2.4rem;
-  margin-bottom: 3.1rem;
-}
-@media screen and (min-width: 600px) {
-  .p-heading__h3 {
-    font-size: 2.8rem;
-    margin-bottom: 6rem;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .p-heading__h3 {
-    font-size: 1.9rem;
-    margin-bottom: 3.7rem;
-  }
-}
-.p-heading__h4 {
-  font-size: 2rem;
-  margin-bottom: 3.7rem;
-}
-@media screen and (min-width: 600px) {
-  .p-heading__h4 {
-    margin-bottom: 7.6rem;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .p-heading__h4 {
-    font-size: 1.4rem;
-    margin-bottom: 3.7rem;
-  }
 }
 .p-heading__h5, .p-heading__h6 {
   font-size: 2rem;
