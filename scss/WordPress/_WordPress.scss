@@ -107,6 +107,7 @@
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: 400;
     font-size: 1.6rem;
+    color: v.$color-brown;
     margin-bottom: 6rem;
     @include m.pc {
       font-size: 1.3rem;
@@ -118,6 +119,7 @@
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: 400;
     font-size: 1.6rem;
+    color: v.$color-brown;
     @include m.pc {
       font-size: 1.3rem;
     }

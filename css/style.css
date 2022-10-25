@@ -1704,6 +1704,7 @@ object {
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
+  color: #3C2A10;
   margin-bottom: 6rem;
 }
 @media screen and (min-width: 1025px) {
@@ -1716,6 +1717,7 @@ object {
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
+  color: #3C2A10;
 }
 @media screen and (min-width: 1025px) {
   .wp-block-quote cite {
