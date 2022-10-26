@@ -125,3 +125,60 @@
     }
   }
 }
+
+// singleページの一番大きなハンバーガー画像
+// 画像下のmarginを調整
+.wp-block-image {
+  margin-bottom: 3rem;
+  @include m.tablet {
+    margin-bottom: 6rem;
+  }
+  @include m.pc {
+    margin-bottom: 4.2rem;
+  }
+}
+
+// ハンバーガー画像とテキストが横並びのところ
+
+// 1つ目の横並びの部分
+.wp-block-media-text {
+  // 画像とテキストのwidthの割合を調整
+  grid-template-columns: 42.9% 1fr;
+  margin-bottom: 3rem;
+  @include m.tablet {
+    margin-bottom: 11.7rem;
+  }
+  @include m.pc {
+    margin-bottom: 4.4rem;
+  }
+}
+
+// 2つ目の横並びの部分
+.wp-block-media-text.has-media-on-the-right {
+  // 画像とテキストのwidthの割合を調整
+  grid-template-columns: 1fr 42.9%;
+  margin-bottom: 3rem;
+  @include m.tablet {
+    margin-bottom: 6.1rem;
+  }
+  @include m.pc {
+    margin-bottom: 4.4rem;
+  }
+}
+
+// 画面横のテキスト
+.wp-block-media-text__content {
+  & p {
+    // 「.c-inner--single p」のCSSでついたmargin-bottomを消す
+    margin-bottom: 0;
+    // フォントの調整
+    font-size: 1.6rem;
+    line-height: 1.43;
+    @include m.pc {
+      font-size: 1.23rem;
+    }
+  }
+}
+.wp-block-media-text .wp-block-media-text__content {
+  align-self: start;
+}
