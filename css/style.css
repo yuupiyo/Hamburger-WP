@@ -395,23 +395,6 @@ object {
     height: auto;
   }
 }
-.c-image__tile {
-  width: 100%;
-  height: 20.5rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media screen and (min-width: 600px) {
-  .c-image__tile {
-    width: 48%;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .c-image__tile {
-    width: 32.3%;
-    height: 19rem;
-  }
-}
 
 .c-inner {
   width: 100%;
