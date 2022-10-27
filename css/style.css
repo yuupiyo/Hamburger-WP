@@ -498,6 +498,62 @@ object {
     margin-bottom: 3.7rem;
   }
 }
+.c-inner--single > ul {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  color: #3C2A10;
+  list-style: decimal;
+  padding: 3rem 0 6rem 2rem;
+}
+@media screen and (min-width: 600px) {
+  .c-inner--single > ul {
+    padding: 6rem 0 6rem 6.5rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-inner--single > ul {
+    padding: 4.2rem 0 4.2rem 5rem;
+  }
+}
+.c-inner--single > ul > li > ul {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  color: #3C2A10;
+  list-style: decimal;
+  margin: 2rem 0 2rem 1.8rem;
+}
+@media screen and (min-width: 1025px) {
+  .c-inner--single > ul > li > ul {
+    margin: 1.25rem 0 1.25rem 1.8rem;
+  }
+}
+.c-inner--single > ol {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  color: #3C2A10;
+  padding: 0 0 3rem 0;
+}
+@media screen and (min-width: 600px) {
+  .c-inner--single > ol {
+    padding: 0 0 6rem 5rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-inner--single > ol {
+    padding: 0 0 3.7rem 3.75rem;
+  }
+}
+.c-inner--single > ol > li > ol {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  color: #3C2A10;
+  margin: 2rem 0 2rem 1.8rem;
+}
+@media screen and (min-width: 1025px) {
+  .c-inner--single > ol > li > ol {
+    margin: 1.25rem 0 1.25rem 1.8rem;
+  }
+}
 
 .c-list-item {
   font-size: 1.6rem;

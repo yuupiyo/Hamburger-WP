@@ -83,5 +83,52 @@
         margin-bottom: 3.7rem;
       }
     }
+
+    // singleページのリスト部分
+    & > ul {
+      font-family: 'M PLUS 1p', sans-serif;
+      font-weight: 400;
+      color: v.$color-brown;
+      list-style: decimal;
+      padding: 3rem 0 6rem 2rem;
+      
+      @include m.tablet {
+        padding: 6rem 0 6rem 6.5rem;
+      }
+      @include m.pc {
+        padding: 4.2rem 0 4.2rem 5rem;
+      }
+      & > li > ul {
+        font-family: 'M PLUS 1p', sans-serif;
+        font-weight: 400;
+        color: v.$color-brown;
+        list-style: decimal;
+        margin: 2rem 0 2rem 1.8rem;
+        @include m.pc {
+          margin: 1.25rem 0 1.25rem 1.8rem;
+        }
+      }
+    }
+    & > ol {
+      font-family: 'M PLUS 1p', sans-serif;
+      font-weight: 400;
+      color: v.$color-brown;
+      padding: 0 0 3rem 0;
+      @include m.tablet {
+        padding: 0 0 6rem 5rem;
+      }
+      @include m.pc {
+        padding: 0 0 3.7rem 3.75rem;
+      }
+      & > li > ol {
+        font-family: 'M PLUS 1p', sans-serif;
+          font-weight: 400;
+          color: v.$color-brown;
+          margin: 2rem 0 2rem 1.8rem;
+          @include m.pc {
+            margin: 1.25rem 0 1.25rem 1.8rem;
+          }
+      }
+    }
   }
 }
