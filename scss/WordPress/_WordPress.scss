@@ -182,3 +182,31 @@
 .wp-block-media-text .wp-block-media-text__content {
   align-self: start;
 }
+
+// パネル状のハンバーガー画像部分
+// 画像の調整
+.wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image) {
+  width: 100%;
+  object-fit: cover;
+  @include m.tablet {
+    width: 48%;
+  }
+  @include m.pc {
+    width: 32.3%;
+  }
+}
+// 画像の親要素にflexを指定して、元々のflexを上書きした
+.wp-block-gallery.has-nested-images.columns-default {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+  @include m.tablet {
+    gap: 2rem 1.6rem;
+    margin-top: 4.2rem;
+  }
+  @include m.pc {
+    gap: 1.4rem;
+  }
+}
