@@ -85,6 +85,7 @@
     }
 
     // singleページのリスト部分
+    // 1つ目のリスト フォントの設定・全体の余白調整・先頭に番号を振った
     & > ul {
       font-family: 'M PLUS 1p', sans-serif;
       font-weight: 400;
@@ -98,6 +99,7 @@
       @include m.pc {
         padding: 4.2rem 0 4.2rem 5rem;
       }
+      // 1つ目のリストの真ん中部分 フォントの設定・上下の余白設定・先頭に番号を振った
       & > li > ul {
         font-family: 'M PLUS 1p', sans-serif;
         font-weight: 400;
@@ -109,6 +111,7 @@
         }
       }
     }
+    // 2つ目のリスト フォントの設定・余白の調整をした
     & > ol {
       font-family: 'M PLUS 1p', sans-serif;
       font-weight: 400;
@@ -120,14 +123,15 @@
       @include m.pc {
         padding: 0 0 3.7rem 3.75rem;
       }
+      // 2つ目のリストの真ん中部分 フォントの設定・余白の調整をした
       & > li > ol {
         font-family: 'M PLUS 1p', sans-serif;
-          font-weight: 400;
-          color: v.$color-brown;
-          margin: 2rem 0 2rem 1.8rem;
-          @include m.pc {
-            margin: 1.25rem 0 1.25rem 1.8rem;
-          }
+        font-weight: 400;
+        color: v.$color-brown;
+        margin: 2rem 0 2rem 1.8rem;
+        @include m.pc {
+          margin: 1.25rem 0 1.25rem 1.8rem;
+        }
       }
     }
   }
