@@ -1519,6 +1519,9 @@ object {
     font-size: 1.2rem;
   }
 }
+.p-about__text a {
+  text-decoration: underline;
+}
 
 .p-menu-list {
   width: 100%;

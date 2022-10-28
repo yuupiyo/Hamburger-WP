@@ -29,5 +29,9 @@
     @include m.pc {
       font-size: 1.2rem;
     }
+    // 404.phpのリンクに下線を付けた
+    & a {
+      text-decoration: underline;
+    }
   }
 }
