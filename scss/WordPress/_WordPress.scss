@@ -210,3 +210,31 @@
     gap: 1.4rem;
   }
 }
+
+// <table>タグの部分
+.wp-block-table {
+  & table {
+    // 背景色を白に設定
+    background-color: v.$color-white;
+    // 左側の<td>の幅をデザインカンプ通りに調整
+    & > tbody > tr > td:first-child {
+      width: 40.2%;
+      @include m.tablet {
+        width: 30.1%;
+      }
+      @include m.pc {
+        width: 31.7%;
+      }
+    }
+  }
+  // borderの調整・フォントの設定・余白の調整をした
+  & td {
+    border: 0.1rem solid v.$color-grey;
+    font-size: 1.6rem;
+    padding: 2.8rem 0 2.7rem 3rem;
+    @include m.pc {
+      font-size: 1.2rem;
+      padding: 1.75rem;
+    }
+  }
+}
