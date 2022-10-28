@@ -1,19 +1,2 @@
 @use "../../foundation/mixin" as m;
 @use "../../foundation/variable" as v;
-
-.p-heading {
-  width: 100%;
-
-  &__h5,
-  &__h6 {
-    font-size: 2rem;
-    margin-bottom: 3rem;
-    @include m.tablet {
-      margin-bottom: 6rem;
-    }
-    @include m.pc {
-      font-size: 1.4rem;
-      margin-bottom: 3.7rem;
-    }
-  }
-}

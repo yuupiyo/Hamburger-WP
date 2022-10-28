@@ -957,25 +957,6 @@ object {
   }
 }
 
-.p-heading {
-  width: 100%;
-}
-.p-heading__h5, .p-heading__h6 {
-  font-size: 2rem;
-  margin-bottom: 3rem;
-}
-@media screen and (min-width: 600px) {
-  .p-heading__h5, .p-heading__h6 {
-    margin-bottom: 6rem;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .p-heading__h5, .p-heading__h6 {
-    font-size: 1.4rem;
-    margin-bottom: 3.7rem;
-  }
-}
-
 .p-list__order {
   padding: 3rem 0 6rem 2rem;
 }
