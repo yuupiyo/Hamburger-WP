@@ -16,6 +16,6 @@
       <p class="p-footer__copyright c-text__font02"><small>Copyright: RaiseTech</small></p>
     </footer> 
   </div>
-
+  <?php wp_footer(); ?>
 </body>
 </html>
