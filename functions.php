@@ -35,7 +35,7 @@ add_filter('pre_get_document_title', 'hamburger_title');
 // 
 function hamburger_script() {
   // リセットCSS
-  wp_enqueue_style('reset-css', '//unpkg.com/destyle.css@3.0.2/destyle.min.css', array(), false, 'all');
+  wp_enqueue_style('reset-css', get_theme_file_uri('/css/destyle.min.css'), array(), false, 'all');
   // Google Fonts
   wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&family=M+PLUS+1:wght@100;300;500;700;800;900&display=swap', array());
   // メインのCSSファイル
