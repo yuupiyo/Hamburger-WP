@@ -30,10 +30,10 @@
     }
     &:first-child { 
       color: v.$color-lightgrey;
-      background: url(/wp-content/themes/hamburger-wp/images/bg-takeout.jpg) no-repeat center center/cover;
+      background: url(../images/bg-takeout.jpg) no-repeat center center/cover;
     }
     &:nth-child(2) {
-      background: url(/wp-content/themes/hamburger-wp/images/bg-eatin.jpg) no-repeat center center/cover;
+      background: url(../images/bg-eatin.jpg) no-repeat center center/cover;
       margin-top: 2rem;
       @include m.tablet {
         margin-top: 0;
