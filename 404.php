@@ -15,7 +15,7 @@
       <div class="c-inner">
         <section class="p-about c-text-color__third">
           <h2 class="p-about__title c-text__font02--bold">お探しのページが見つかりませんでした。</h2>
-          <p class="p-about__text c-text__font02">申し訳ございませんが、<a href="<?php echo home_url( '/' ); ?>">こちらのリンク</a>からトップページにお戻りください。</p>
+          <p class="p-about__text c-text__font02">申し訳ございませんが、<a href="<?php echo esc_url(home_url( '/' )); ?>">こちらのリンク</a>からトップページにお戻りください。</p>
         </section>
       </div>
     </article>

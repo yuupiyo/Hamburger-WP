@@ -1,4 +1,4 @@
-<form method="get" action="<?php echo home_url('/'); ?>" class="p-search">
+<form method="get" action="<?php echo esc_url(home_url('/')); ?>" class="p-search">
   <label for="">
     <input type="text" class="p-search__input c-border__round" name="s" id="s" value="<?php the_search_query(); ?>" placeholder="キーワード">
   </label>

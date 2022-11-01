@@ -37,6 +37,7 @@
                 </a>
               </figure>
             </section>
+            <?php wp_link_pages(); ?>
           <?php endwhile; else: ?>
             <p class="p-search-text">検索結果はありません。</p>
         <?php endif; ?>

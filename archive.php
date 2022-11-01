@@ -27,7 +27,7 @@
                     <?php if ( has_post_thumbnail() ): ?>
                       <?php the_post_thumbnail("full", array("alt" => get_the_title(), "class" => "p-menu-list__image c-card__image")); ?>
                     <?php else: ?>
-                      <img src="<?php echo get_template_directory_uri() ?>/images/no-image.svg" alt="no-imageのイメージ画像" class="p-menu-list__image c-card__image">
+                      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/no-image.svg" alt="no-imageのイメージ画像" class="p-menu-list__image c-card__image">
                     <?php endif; ?>
                   <figcaption class="p-menu-list__wrapper c-background-color__brown">
                     <div class="p-menu-list__content">
@@ -42,6 +42,7 @@
                 </a>
               </figure>
             </section>
+            <?php wp_link_pages(); ?>
           <?php endwhile; else: ?>
             <p>記事はありません。</p>
         <?php endif; ?>
