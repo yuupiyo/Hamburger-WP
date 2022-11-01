@@ -1722,6 +1722,8 @@ object {
 }
 .wp-block-table td {
   border: 0.1rem solid #707070;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
   font-size: 1.6rem;
   padding: 2.8rem 0 2.7rem 3rem;
 }
