@@ -725,6 +725,7 @@ object {
 
 .c-text__font01 {
   font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 .c-text__font02 {
   font-family: "M PLUS 1p", sans-serif;
